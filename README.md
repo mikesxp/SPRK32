@@ -19,7 +19,7 @@ VMS (Virtual Machine System) is a fantasy computer environment inspired by 80/90
 The system is designed around the idea of writing software close to the hardware, where every resource matters.
 
 The virtual machine reflects the spirit of early personal computers:
-* CPU clock: 16MHz
+* CPU clock: **16MHz**
 * Display resolution: **160×120**
 * Color depth: **256 colors**
 * Storage: **3.5" HD floppy disk images**
@@ -39,8 +39,9 @@ Example of a vms.cfg:
 ```
 compile rom.bsl to rom.bin as 65536
 disasm rom.bin rom.s
-isok?
+isok? // Check for errors
 
+// Set rom/disk binaries paths
 disk = disk.bin
 rom = rom.bin
 emulate
