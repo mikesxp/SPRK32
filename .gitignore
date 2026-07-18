@@ -1,0 +1,5 @@
+.cache/
+.vscode/
+test/
+build/
+.DS_STORE
